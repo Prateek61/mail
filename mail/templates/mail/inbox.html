@@ -27,11 +27,12 @@
                 <input class="form-control" id="compose-subject" placeholder="Subject">
             </div>
             <textarea class="form-control" id="compose-body" placeholder="Body"></textarea>
-            <input type="submit" class="btn btn-primary"/>
+            <div id="compose-form-alert" class="alert alert-danger">Please fill all fields</div>
+            <input id="form-submit-btn" type="submit" class="btn btn-primary"/>
         </form>
     </div>
 {% endblock %}
 
 {% block script %}
-    <script src="{% static 'mail/inbox.js' %}"></script>
+    <script type="module" src="{% static 'mail/inbox.js' %}"></script>
 {% endblock %}
